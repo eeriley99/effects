@@ -1,0 +1,113 @@
+/*Reference: http://themes.alienmelon.com/version2/
+https://alienmelon.itch.io/themes */
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    /* transform: scale(.2);
+    transform-origin: 50% 50%;  to make your browser tiny*/
+}
+
+canvas {
+    display: block;
+    z-index: -1;
+}
+
+.header {
+
+    animation: rocking 0.3s ease-out alternate infinite;
+
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+}
+
+.image {
+
+    animation: button_spin 1.3s ease-out infinite;
+    padding: 60px;
+    text-align: center;
+}
+
+.content {
+
+    animation: floating 0.9s ease-out alternate infinite;
+    padding: 60px;
+    text-align: center;
+}
+
+
+
+@keyframes rotation {
+    0% {
+        transform: rotate(-.7deg);
+    }
+
+    100% {
+        transform: rotate(.7deg);
+    }
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rocking {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+
+    @keyframes button_spin {
+        0% {
+            transform: rotate(0deg) scale(1.5);
+        }
+
+        20% {
+            transform: rotate(6deg) scale(2);
+        }
+
+        50% {
+            transform: rotate(0deg) scale(1.5);
+        }
+
+        80% {
+            transform: rotate(-6deg) scale(2);
+        }
+
+        100% {
+            transform: rotate(0deg) scale(1.5);
+        }
+    }
