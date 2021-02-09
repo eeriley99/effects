@@ -12,8 +12,8 @@ h1 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #bac2bd;
-    font-size: 52px;
-    letter-spacing: 4px;
+    font-size: 5vw;
+    letter-spacing: 1vw;
     z-index: 3;
 }
 
@@ -22,7 +22,8 @@ h3 {
     z-index: 3;
     font-family: 'Catamaran', sans-serif;
     color: #bac2bd;
-    font-size: 32px;
+    font-size: 2.5vw;
+    ;
     width: 100%;
 
 }
@@ -58,7 +59,6 @@ a:hover {
 }
 
 canvas {
-    position: absolute;
     display: block;
     z-index: -1;
 }
