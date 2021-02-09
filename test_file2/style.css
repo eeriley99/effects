@@ -18,7 +18,7 @@ canvas {
 
 .header {
 
-    animation: rocking 0.3s ease-out alternate infinite;
+    // animation: rocking 0.3s ease-out alternate infinite;
 
     padding: 60px;
     text-align: center;
@@ -29,14 +29,14 @@ canvas {
 
 .image {
 
-    animation: button_spin 1.3s ease-out infinite;
-    padding: 60px;
+    animation: rotation 30s ease-out infinite;
+    padding: 0px;
     text-align: center;
 }
 
 .content {
 
-    animation: floating 0.9s ease-out alternate infinite;
+    //  animation: floating 0.9s ease-out alternate infinite;
     padding: 60px;
     text-align: center;
 }
@@ -45,12 +45,14 @@ canvas {
 
 @keyframes rotation {
     0% {
-        transform: rotate(-.7deg);
+        transform: rotate(-360deg);
     }
 
+/*
     100% {
         transform: rotate(.7deg);
     }
+*/
 }
 
 @keyframes floating {
