@@ -17,7 +17,7 @@ h1 {
     z-index: 3;
 }
 
-.leftImg {
+h3 {
     position: absolute;
     z-index: 3;
     font-family: 'Catamaran', sans-serif;
@@ -50,16 +50,39 @@ h1 {
     top: 50%
 }
 
-a.a0 {
+table {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
+}
+
+td {
+    width: 33vw;
+    height: 33vw;
+    vertical-align: baseline;
+    padding-top: 10px;
+    text-align: center;
+
+    &:after,
+    &:before {
+        content: '';
+
+        display: block;
+        padding-bottom: calc(50% - 0.5em);
+    }
+}
+
+td a.a0 {
     cursor: url('boxCursor.png'),
         auto;
 }
 
-a.a1 {
+td a.a1 {
     cursor: url('paneCursor.png'), auto;
 }
 
-a.a2 {
+td a.a2 {
     cursor: url('paperCursor.png'), auto;
 }
 
