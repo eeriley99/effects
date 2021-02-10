@@ -17,19 +17,42 @@ h1 {
     z-index: 3;
 }
 
-h3 {
+.leftImg {
     position: absolute;
     z-index: 3;
     font-family: 'Catamaran', sans-serif;
     color: #bac2bd;
     font-size: 2.5vw;
-    ;
+    text-align: center;
     width: 100%;
+    top: 50%
+}
 
+.cntrImg {
+    position: absolute;
+    z-index: 3;
+    font-family: 'Catamaran', sans-serif;
+    color: #bac2bd;
+    font-size: 2.5vw;
+    text-align: center;
+    width: 100%;
+    top: 50%
+}
+
+.rightImg {
+    position: absolute;
+    z-index: 3;
+    font-family: 'Catamaran', sans-serif;
+    color: #bac2bd;
+    font-size: 2.5vw;
+    text-align: center;
+    width: 100%;
+    top: 50%
 }
 
 a.a0 {
-    cursor: url('boxCursor.png'), auto;
+    cursor: url('boxCursor.png'),
+        auto;
 }
 
 a.a1 {
