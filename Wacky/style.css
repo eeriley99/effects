@@ -32,6 +32,7 @@ canvas {
     animation: rotation 30s ease-out infinite;
     padding: 0px;
     text-align: center;
+    z-index: 1;
 }
 
 .content {
@@ -48,7 +49,7 @@ canvas {
         transform: rotate(-360deg);
     }
 
-/*
+    /*
     100% {
         transform: rotate(.7deg);
     }
