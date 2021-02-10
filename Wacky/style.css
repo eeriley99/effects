@@ -26,7 +26,6 @@ canvas {
     color: white;
     font-size: 30px;
 }
-
 .image {
 
     animation: rotation 30s ease-out infinite;

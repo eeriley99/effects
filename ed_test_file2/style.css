@@ -6,12 +6,12 @@ body {
     background-color: whitesmoke;
 }
 
+
 h1 {
     position: absolute;
     left: 50%;
     top: 5%;
-    text-align: center;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%);
     font-family: 'Montserrat', sans-serif;
     color: #bac2bd;
     font-size: 5vw;
@@ -29,14 +29,22 @@ h3 {
     text-align: center;
 }
 
-/*
-.image {
+.header {
+    animation: rocking 0.9s ease-out alternate infinite;
 
-    animation: rotation 30s ease-out infinite;
+}
+
+/*
+.image0 {
+
+    animation: rotation 10s infinite linear;
     padding: 0px;
     text-align: center;
 }
 */
+
+
+
 
 a.a0 {
     cursor: url('boxCursor.png'), auto;
@@ -98,79 +106,97 @@ img {
     text-align: center;
 }
 
+table.table1 {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+table.table1 td {
+    width: 33vw;
+    padding-top: 10px;
+    text-align: center;
+
+
+    &:after,
+    &:before {
+        content: '';
+
+        display: block;
+        padding-bottom: calc(50% - 0.5em);
+    }
+}
+
+/*Keyframes below*/
+
 @keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rocking {
     0% {
-        transform: rotate(-360deg);
+        transform: rotate(deg);
     }
 
-    table.table0 {
-        position: absolute;
-        z-index: 3;
-        width: 100%;
-        left: 50%;
-        top: 7%;
-        transform: translateX(-50%) translateY(-50%);
+    50% {
+        transform: rotate(-5deg);
     }
 
-    table.table0 td {
-        width: 33vw;
-        padding-top: 10px;
-        text-align: center;
-        white-space: nowrap;
+    100% {
+        transform: rotate(5deg);
+    }
 
-        &:after,
-        &:before {
-            content: '';
-
-            display: block;
-            padding-bottom: calc(50% - 0.5em);
+    @keyframes button_spin {
+        0% {
+            transform: rotate(0deg) scale(1.5);
         }
-    }
 
-    table.table1 {
-        position: absolute;
-        z-index: 2;
-        width: 100%;
-        left: 50%;
-        top: 40%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-
-    table.table1 td {
-        width: 33vw;
-        padding-top: 10px;
-        text-align: center;
-
-
-        &:after,
-        &:before {
-            content: '';
-
-            display: block;
-            padding-bottom: calc(50% - 0.5em);
+        20% {
+            transform: rotate(6deg) scale(2);
         }
-    }
 
-    table.table2 {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        left: 50%;
-        top: 40%;
-        transform: translateX(-50%) translateY(-50%);
-    }
+        50% {
+            transform: rotate(0deg) scale(1.5);
+        }
 
-    table.table2 td {
-        width: 33vw;
-        padding-top: 10px;
-        text-align: center;
+        80% {
+            transform: rotate(-6deg) scale(2);
+        }
 
-
-        &:after,
-        &:before {
-            content: '';
-
-            display: block;
-            padding-bottom: calc(50% - 0.5em);
+        100% {
+            transform: rotate(0deg) scale(1.5);
         }
     }
