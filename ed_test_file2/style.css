@@ -54,6 +54,23 @@ canvas {
     z-index: -1;
 }
 
+#leftEle {
+    margin-left: 33%;
+
+}
+
+#midEle {}
+
+#rhtEle {
+    margin-right: 66%;
+}
+
+img {
+    display: block;
+    padding: 40px;
+    text-align: center;
+}
+
 table.table0 {
     position: absolute;
     z-index: 3;
