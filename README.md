@@ -1,2 +1,2 @@
 # effects
-testing wierd effect on website
+testing weird effect on website

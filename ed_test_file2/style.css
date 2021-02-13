@@ -1,0 +1,202 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Catamaran', sans-serif;
+    background-color: whitesmoke;
+}
+
+
+h1 {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat', sans-serif;
+    color: #bac2bd;
+    font-size: 5vw;
+    letter-spacing: 1vw;
+    z-index: 2;
+}
+
+h3 {
+
+    top: 50%;
+    z-index: 3;
+    font-family: 'Catamaran', sans-serif;
+    color: #bac2bd;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.header {
+    animation: rocking 0.9s ease-out alternate infinite;
+
+}
+
+/*
+.image0 {
+
+    animation: rotation 10s infinite linear;
+    padding: 0px;
+    text-align: center;
+}
+*/
+
+
+
+
+a.a0 {
+    cursor: url('boxCursor.png'), auto;
+}
+
+a.a1 {
+    cursor: url('paneCursor.png'), auto;
+}
+
+a.a2 {
+    cursor: url('paperCursor.png'), auto;
+}
+
+
+a:link {
+    color: #bac2bd;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffc8af;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkslategrey;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+canvas {
+    display: block;
+    z-index: -1;
+}
+
+#leftEle {
+    position: absolute;
+    top: 25%;
+    margin-left: 0%;
+}
+
+#midEle {
+    position: absolute;
+    top: 25%;
+    margin-left: 33%;
+}
+
+#rhtEle {
+    position: absolute;
+    top: 25%;
+    margin-left: 66%;
+}
+
+img {
+    display: block;
+    padding: 40px;
+    text-align: center;
+}
+
+table.table1 {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+table.table1 td {
+    width: 33vw;
+    padding-top: 10px;
+    text-align: center;
+
+
+    &:after,
+    &:before {
+        content: '';
+
+        display: block;
+        padding-bottom: calc(50% - 0.5em);
+    }
+}
+
+/*Keyframes below*/
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rocking {
+    0% {
+        transform: rotate(deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+
+    @keyframes button_spin {
+        0% {
+            transform: rotate(0deg) scale(1.5);
+        }
+
+        20% {
+            transform: rotate(6deg) scale(2);
+        }
+
+        50% {
+            transform: rotate(0deg) scale(1.5);
+        }
+
+        80% {
+            transform: rotate(-6deg) scale(2);
+        }
+
+        100% {
+            transform: rotate(0deg) scale(1.5);
+        }
+    }
