@@ -1,7 +1,13 @@
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(400, 400);
+    canvas = createCanvas(windowWidth, windowHeight);
+    canvas.position(0, 0);
+    canvas.style('z-index', '-1')
 }
 
 function draw() {
-  background(220);
+    background(255, 0, 0);
 }
